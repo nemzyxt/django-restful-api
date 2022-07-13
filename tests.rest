@@ -1,0 +1,25 @@
+GET http://localhost:8000/books
+
+###
+POST http://localhost:8000/books/
+Content-Type: application/json
+
+{
+    "title": "Django for Ninjas",
+    "description": "The ultimate guide to becoming a Django Ninja"
+}
+
+###
+GET http://localhost:8000/book/3
+
+###
+PUT http://localhost:8000/book/2
+Content-Type: application/json
+
+{
+    "title": "Django for Ninjas 2nd Edition",
+    "description": "Grab some Django Kung-Fu skills"
+}
+
+###
+DELETE http://localhost:8000/book/3
